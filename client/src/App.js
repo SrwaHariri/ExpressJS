@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import Button from './Button';
+import GoogleSearch from './GoogleSearch';
+import { queries } from '@testing-library/react';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <p>
-        <Button>Click Me</Button>
+          <GoogleSearch queries={queries}/>
         </p>
         <a
           className="App-link"
