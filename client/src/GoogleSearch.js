@@ -1,5 +1,8 @@
+import'./GoogleSearch.css';
 import React, { useState } from 'react';
 import Button from './Button';
+import TextArea from './TextArea';
+// import AnimatedDiv from './AnimatedDiv';
 import axios from 'axios';
 
 const GoogleSearch = () => {
@@ -33,15 +36,19 @@ const GoogleSearch = () => {
   };
 
   return (
-    <div>
+    <div className='Container'>
       <h4>Google Search Results</h4  >
-      <textarea
+     <div className='Box' >
+     <TextArea
         value={queries}
         onChange={handleInputChange}
-        rows="10"
-        cols="50"
+        rows="5"
+        cols="20"
         placeholder="Enter each search query on a new line"
       />
+     </div>
+      
+      
       <br />
       <Button onClick={searchGoogle}>Search</Button>
       {results.map((result, index) => (

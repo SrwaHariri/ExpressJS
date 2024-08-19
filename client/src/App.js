@@ -6,7 +6,8 @@ import { queries } from '@testing-library/react';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
       <header className="App-header">
         <p>
           <GoogleSearch queries={queries}/>
