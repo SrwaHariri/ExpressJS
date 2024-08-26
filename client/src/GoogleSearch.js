@@ -2,7 +2,6 @@ import'./GoogleSearch.css';
 import React, { useState } from 'react';
 import Button from './Button';
 import TextArea from './TextArea';
-// import AnimatedDiv from './AnimatedDiv';
 import axios from 'axios';
 
 const GoogleSearch = () => {
